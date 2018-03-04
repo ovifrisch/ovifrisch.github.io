@@ -1,23 +1,450 @@
+<!DOCTYPE html>
 <html>
-
     <head>
+        <script type="text/javascript" src="grid.js"></script>
         <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
-        <form name="tempForm">
-            <label for="temp">Temperature:</label>
-            <input type="text" id="temp"><br>
+        <!-- Grid -->
+        <table id="grid">
+            <!-- 1st Box Row -->
+            <tr>
+                <!-- 1st Box -->
+                <td class="box_td">
+                    <table class="box" id = "box1">
+                        <tr>
+                            <td class = "square" onclick="square_click(0, 0)">
+                                <input class = "num_in row0 col0" type="text" size="2" maxlength="1" value="" autofocus="autofocus">
+                            </td>
 
-            <input type="radio" name="choice" value="fahrenheit" checked />Convert to Fahrenheit <br>
-            <input type="radio" name="choice" value="celsius">Convert to Celsius  <br>
+                            <td class = "square" onclick="square_click(0, 1)">
+                                <input class = "num_in row0 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
 
-            <label for="resultField">Result: </label>
-            <input type="text" id="resultField"><br>
+                            <td class = "square" onclick="square_click(0, 2)">
+                                <input class = "num_in row0 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
 
-            <input type="button" value="Convert" onclick="processForm()">
-        </form>
+                        <tr>
+                            <td class = "square" onclick="square_click(1, 0)">
+                                <input class = "num_in row1 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 1)">
+                                <input class = "num_in row1 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 2)">
+                                <input class = "num_in row1 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(2, 0)">
+                                <input class = "num_in row2 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 1)">
+                                <input class = "num_in row2 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 2)">
+                                <input class = "num_in row2 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 2nd Box -->
+                <td class="box_td">
+                    <table class="box" id = "box2">
+                        <tr>
+                            <td class = "square" onclick="square_click(0, 3)">
+                                <input class = "num_in  row0 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(0, 4)">
+                                <input class = "num_in row0 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(0, 5)">
+                                <input class = "num_in row0 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(1, 3)">
+                                <input class = "num_in row1 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 4)">
+                                <input class = "num_in row1 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 5)">
+                                <input class = "num_in row1 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(2, 3)">
+                                <input class = "num_in row2 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 4)">
+                                <input class = "num_in row2 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 5)">
+                                <input class = "num_in row2 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 3rd Box -->
+                <td class="box_td">
+                    <table class="box" id = "box3">
+                        <tr>
+                            <td class = "square" onclick="square_click(0, 6)">
+                                <input class = "num_in row0 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(0, 7)">
+                                <input class = "num_in row0 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(0, 8)">
+                                <input class = "num_in row0 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                             <td class = "square" onclick="square_click(1, 6)">
+                                <input class = "num_in row1 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 7)">
+                                <input class = "num_in row1 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(1, 8)">
+                                <input class = "num_in row1 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                           
+                        <tr>
+                             <td class = "square" onclick="square_click(2, 6)">
+                                <input class = "num_in row2 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 7)">
+                                <input class = "num_in row2 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(2, 8)">
+                                <input class = "num_in row2 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 2nd Box Row -->
+            <tr>
+                
+                <!-- 4th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box4">
+                        <tr>
+                            <td class = "square" onclick="square_click(3, 0)">
+                                <input class = "num_in row3 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 1)">
+                                <input class = "num_in row3 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 2)">
+                                <input class = "num_in row3 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(4, 0)">
+                                <input class = "num_in row4 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 1)">
+                                <input class = "num_in row4 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 2)">
+                                <input class = "num_in row4 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(5, 0)">
+                                <input class = "num_in row5 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 1)">
+                                <input class = "num_in row5 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 2)">
+                                <input class = "num_in row5 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 5th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box5">
+                        <tr>
+                            <td class = "square" onclick="square_click(3, 3)">
+                                <input class = "num_in row3 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 4)">
+                                <input class = "num_in row3 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 5)">
+                                <input class = "num_in row3 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(4, 3)">
+                                <input class = "num_in row4 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 4)">
+                                <input class = "num_in row4 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 5)">
+                                <input class = "num_in row4 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(5, 3)">
+                                <input class = "num_in row5 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 4)">
+                                <input class = "num_in row5 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 5)">
+                                <input class = "num_in row5 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 6th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box6">
+                        <tr>
+                            <td class = "square" onclick="square_click(3, 6)">
+                                <input class = "num_in row3 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 7)">
+                                <input class = "num_in row3 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(3, 8)">
+                                <input class = "num_in row3 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(4, 6)">
+                                <input class = "num_in row4 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 7)">
+                                <input class = "num_in row4 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(4, 8)">
+                                <input class = "num_in row4 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(5, 6)">
+                                <input class = "num_in row5 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 7)">
+                                <input class = "num_in row5 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(5, 8)">
+                                <input class = "num_in row5 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- 3rd Box Row -->
+            <tr>
+                <!-- 7th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box7">
+                        <tr>
+                            <td class = "square" onclick="square_click(6, 0)">
+                                <input class = "num_in row6 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 1)">
+                                <input class = "num_in row6 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 2)">
+                                <input class = "num_in row6 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(7, 0)">
+                                <input class = "num_in row7 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 1)">
+                                <input class = "num_in row7 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 2)">
+                                <input class = "num_in row7 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(8, 0)">
+                                <input class = "num_in row8 col0" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 1)">
+                                <input class = "num_in row8 col1" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 2)">
+                                <input class = "num_in row8 col2" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 8th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box8">
+                        <tr>
+                            <td class = "square" onclick="square_click(6, 3)">
+                                <input class = "num_in row6 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 4)">
+                                <input class = "num_in row6 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 5)">
+                                <input class = "num_in row6 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(7, 3)">
+                                <input class = "num_in row7 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 4)">
+                                <input class = "num_in row7 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 5)">
+                                <input class = "num_in row7 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(8, 3)">
+                                <input class = "num_in row8 col3" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 4)">
+                                <input class = "num_in row8 col4" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 5)">
+                                <input class = "num_in row8 col5" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+
+                <!-- 9th Box -->
+                <td class="box_td">
+                    <table class="box" id = "box9">
+                        <tr>
+                            <td class = "square" onclick="square_click(6, 6)">
+                                <input class = "num_in row6 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 7)">
+                                <input class = "num_in row6 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(6, 8)">
+                                <input class = "num_in row6 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(7, 6)">
+                                <input class = "num_in row7 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 7)">
+                                <input class = "num_in row7 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(7, 8)">
+                                <input class = "num_in row7 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class = "square" onclick="square_click(8, 6)">
+                                <input class = "num_in row8 col6" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 7)">
+                                <input class = "num_in row8 col7" type="text" size="2" maxlength="1" value="">
+                            </td>
+
+                            <td class = "square" onclick="square_click(8, 8)">
+                                <input class = "num_in row8 col8" type="text" size="2" maxlength="1" value="">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+
+        <input id="solve" type="button" value="SOLVE" onclick="solve()">
+        <input id="set" type="button" value="SET" onclick="set()">
+        <input id="reset" type="button" value="RESET" onclick="reset()">
 
     </body>
-
 </html>
