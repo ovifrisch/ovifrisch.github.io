@@ -1,5 +1,6 @@
 var grid_set = 0; //gets enabled when the user clicks set
 var grid;
+var highlight = 0;
 
 function solve() {
     if (!grid_set)
