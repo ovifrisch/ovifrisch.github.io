@@ -1,0 +1,13 @@
+#inner_wrapper {
+  position: absolute;
+  top: 300px;
+}
+
+#my_picture_wrapper {
+  position: absolute;
+  top: 50px;
+}
+
+#my_picture {
+  border-radius: 50%;
+}
