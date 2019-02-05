@@ -34,11 +34,18 @@
 								<!-- <li><a href="#about">About Me</a></li> -->
 								<li><a href="#intro">Projects</a></li>
 								<li><a href="#work">Experience</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<!-- <li><a href="#contact">Contact</a></li> -->
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
 					</header>
+					<div id="links">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/ovi-fritsch-4a962a117/" class="icon fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/ovifrisch" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://medium.com/@oafritsch" class="icon fa-medium"><span class="label">Medium</span></a></li>
+						</ul>
+					</div>
 				</div>
 
 				<!-- Main -->
@@ -47,47 +54,90 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<h3>Mapy</h3>
-									<p>A location-based communication platform that allows users to interact with different communities.</p>
-									<h5>Technologies Used:</h5>
-										<ul>
-											<li>Ruby/Rails</li>
-											<li>Google Maps API</li>
-											<li>Heroku</li>
-											<li>Javascript, HTML5, CSS</li>
-											<li>Boostrap</li>
-											<li>Redis</li>
-											<li>ActionCable</li>
-										</ul>
-								<h3>Sudoku Solver</h3>
-									<p>A service that provides Sudoku enthusiasts with the ability to upload a picture of their work in progress and receive hints on how to complete it.</p>
-									<h5>Technologies Used:</h5>
-										<ul>
-											<li>C++ with OpenCV</li>
-											<li>PHP</li>
-											<li>Javascript, HTML5, CSS</li>
-											<li>Heroku</li>
-										</ul>
+								<div id="mapy">
+									<div class="mapy_headers">
+										<h3>Mapy</h3>
+										<p>A location-based communication platform that allows users to interact with different communities.</p>
+									</div>
+									<div id="mapy_content_wrap">
+										<div id="mapy_techs">
+											<h5>Technologies Used:</h5>
+											<ul>
+												<li>Ruby/Rails</li>
+												<li>Google Maps API</li>
+												<li>Heroku</li>
+												<li>Javascript, HTML5, CSS</li>
+												<li>Boostrap</li>
+												<li>Redis</li>
+												<li>ActionCable</li>
+											</ul>
+										</div>
+										<div id="mapy_image">
+											<a href="http://mapchat1.herokuapp.com/"><img src="images/mapy.png" alt="" height="213px"></a>
+										</div>
+									</div>
+								</div>
+								<div id="sudoku">
+									<div id="sudoku_headers">
+										<h3>Sudoku Solver</h3>
+										<p>A service that provides Sudoku enthusiasts with the ability to upload a picture of their work in progress and receive hints on how to complete it.</p>
+									</div>
+									<div id="sudoku_content_wrap">
+										<div id="sudoku_techs">
+											<h5>Technologies Used:</h5>
+											<ul>
+												<li>C++ with OpenCV</li>
+												<li>PHP</li>
+												<li>Javascript, HTML5, CSS</li>
+												<li>Heroku</li>
+											</ul>
+										</div>
+										<div id="sudoku_image">
+											<a href="https://sudokusolver1.herokuapp.com/"><img src="images/sudoku.png" alt="" height="213px"></a>
+										</div>
+									</div>
+								</div>
+
+								<div id="pool">
+									<div id="pool_headers">
+										<h3>8 Ball Pool</h3>
+										<p>A website for playing 8 Ball Pool</p>
+									</div>
+									<div id="pool_content_wrap">
+										<div id="pool_techs">
+											<h5>Technologies Used:</h5>
+											<ul>
+												<li>Javascript, HTML, CSS</li>
+												<li>Three.js</li>
+												<li>Cannon.js</li>
+											</ul>
+										</div>
+										<div id="pool_image">
+											<a href="https://ovifrisch.github.io/Pool/"><img src="images/pool.png" alt="" height="213px"></a>
+										</div>
+									</div>
+								</div>
 							</article>
 
 						<!-- Work -->
 							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+								<h2 class="major">Experience</h2>
+								<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
 								<ul>
 									<li>
-										<h3>Karfarm</h3>
+										<h3 id="karfarm"><a href="https://karfarm.com/">Karfarm</a></h3>
 										<ul>
 											<li>Summer 2016</li>
 												<ul>
-													<li>Used BeautifulSoup to scrape data from websites.</li>
+													<li> Used Python with BeautifulSoup library to extract commonly occurring car options/packages across many dealership websites. Used similar techniques to extract salesperson reviews from multiple websites.</li>
 												</ul>
 											<li>Summer 2018</li>
 												<ul>
-													<li>Used Selenium WebDriver to scrape more data from websites.</li>
-													<li>Did some frontend development</li>
-													<li>Also did some early-stage backend development for the chat system</li>
+													<li>Designed and implemented the backend and networking framework for the company’s chat system using Faye and private_pub.</li>
+
+													<li>I created a Python script using Selenium WebDriver that periodically updates a postgres database with data across 40 websites. The script navigates each website in a generalized fashion, according to input parameters.</li>
+
+													<li>Worked closely with a team to go from design to implementation of several web pages.</li>
 												</ul>
 										</ul>
 									</li>

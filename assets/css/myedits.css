@@ -11,3 +11,109 @@
 #my_picture {
   border-radius: 50%;
 }
+
+#mapy {
+  position: relative;
+  height: 400px;
+  width: 100%
+}
+
+#mapy_headers {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+}
+
+#mapy_content_wrap {
+  position: absolute;
+  top: 25%;
+  height: 75%;
+  width: 100%;
+}
+
+#mapy_techs {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#mapy_image {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+#sudoku {
+  position: relative;
+  height: 400px;
+  width: 100%
+}
+
+#sudoku_headers {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+}
+
+#sudoku_content_wrap {
+  position: absolute;
+  top: 25%;
+  height: 75%;
+  width: 100%;
+}
+
+#sudoku_techs {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#sudoku_image {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+#pool {
+  position: relative;
+  height: 400px;
+  width: 100%
+}
+
+#pool_headers {
+  position: absolute;
+  height: 25%;
+  width: 100%;
+}
+
+#pool_content_wrap {
+  position: absolute;
+  top: 25%;
+  height: 75%;
+  width: 100%;
+}
+
+#pool_techs {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+
+#pool_image {
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+#karfarm.hover {
+  text-decoration: underline;
+}
+
+#links {
+  position: relative;
+  top: 40px;
+  text-align: center;
+}
