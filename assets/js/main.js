@@ -6,6 +6,8 @@
 
 (function($) {
 
+	console.log("hey")
+
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
