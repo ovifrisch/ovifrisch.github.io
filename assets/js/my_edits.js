@@ -1,11 +1,8 @@
 
+hidden = False
 
-
-$(document).ready(function() {
-  console.log("hey");
+$(document).ready(function(){
   $(".hoplink").click(function() {
-    console.log("hey");
-    $("#my_picture_wrapper").hide();
   })
 
 });
