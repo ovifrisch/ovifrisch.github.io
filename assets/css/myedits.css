@@ -53,3 +53,10 @@
   height: 100%;
   width: 50%;
 }
+.kf_im {
+  display: inline;
+}
+
+#karfarm {
+  margin-left: 10px;
+}
