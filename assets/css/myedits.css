@@ -53,10 +53,15 @@
   height: 100%;
   width: 50%;
 }
-.kf_im {
+.company_im {
   display: inline;
 }
 
-#karfarm {
+#company {
+  position: relative;
+  top: -7px;
+  font-size: 20px;
+  font-weight: bold;
   margin-left: 10px;
+  display: inline;
 }
